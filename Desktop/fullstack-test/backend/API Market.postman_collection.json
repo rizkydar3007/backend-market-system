@@ -1,0 +1,364 @@
+{
+	"info": {
+		"_postman_id": "8b536a42-1d32-42e0-b8b0-16397572279a",
+		"name": "API Market",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22729813"
+	},
+	"item": [
+		{
+			"name": "API All List Barang",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/barang/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"barang",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Detail Barang",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/barang/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"barang",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Create Barang",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_barang\": 5,\r\n    \"nama_barang\": \"Sampo\",\r\n    \"stok\": 100,\r\n    \"id_jenis_barang\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/barang/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"barang",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Update Barang",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nama_barang\": \"Kopi Baru\",\r\n    \"stok\": 100,\r\n    \"id_jenis_barang\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/barang/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"barang",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Delete Barang",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/barang/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"barang",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API All List Jenis Barang",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/jenisBarang/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"jenisBarang",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Detail Jenis Barang",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/jenisBarang/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"jenisBarang",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Create Jenis Barang",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_jenis_barang\": 2,\r\n    \"nama_jenis_barang\": \"Pembersih\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/jenisBarang/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"jenisBarang",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Update Jenis Barang",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nama_jenis_barang\": \"Konsumsi Baru\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/jenisBarang/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"jenisBarang",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Delete Jenis Barang",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/jenisBarang/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"jenisBarang",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API All List Penjualan",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/penjualan/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"penjualan",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Detail Penjualan",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/penjualan/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"penjualan",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Create Penjualan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_penjualan\": 1,\r\n    \"id_barang\": 1,\r\n    \"qty_terjual\": 100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/penjualan/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"penjualan",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Update Penjualan",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_barang\": 1,\r\n    \"qty_terjual\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/penjualan/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"penjualan",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Delete Penjualan",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/penjualan/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"penjualan",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

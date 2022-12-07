@@ -1,0 +1,518 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "API Market",
+    "contact": {}
+  },
+  "host": "localhost:5000",
+  "basePath": "/",
+  "securityDefinitions": {},
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/barang": {
+      "get": {
+        "summary": "API All List Barang",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "APIAllListBarang",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      },
+      "post": {
+        "summary": "API Create Barang",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "APICreateBarang",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/APICreateBarangRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/barang/1": {
+      "get": {
+        "summary": "API Detail Barang",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "APIDetailBarang",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      },
+      "put": {
+        "summary": "API Update Barang",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "APIUpdateBarang",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/APIUpdateBarangRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      },
+      "delete": {
+        "summary": "API Delete Barang",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "APIDeleteBarang",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/jenisBarang": {
+      "get": {
+        "summary": "API All List Jenis Barang",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "APIAllListJenisBarang",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      },
+      "post": {
+        "summary": "API Create Jenis Barang",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "APICreateJenisBarang",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/APICreateJenisBarangRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/jenisBarang/1": {
+      "get": {
+        "summary": "API Detail Jenis Barang",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "APIDetailJenisBarang",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      },
+      "put": {
+        "summary": "API Update Jenis Barang",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "APIUpdateJenisBarang",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/APIUpdateJenisBarangRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      },
+      "delete": {
+        "summary": "API Delete Jenis Barang",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "APIDeleteJenisBarang",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/penjualan": {
+      "get": {
+        "summary": "API All List Penjualan",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "APIAllListPenjualan",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      },
+      "post": {
+        "summary": "API Create Penjualan",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "APICreatePenjualan",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/APICreatePenjualanRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/penjualan/1": {
+      "get": {
+        "summary": "API Detail Penjualan",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "APIDetailPenjualan",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      },
+      "put": {
+        "summary": "API Update Penjualan",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "APIUpdatePenjualan",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/APIUpdatePenjualanRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      },
+      "delete": {
+        "summary": "API Delete Penjualan",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "APIDeletePenjualan",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "APICreateBarangRequest": {
+      "title": "APICreateBarangRequest",
+      "example": {
+        "id_barang": 5,
+        "nama_barang": "Sampo",
+        "stok": 100,
+        "id_jenis_barang": 2
+      },
+      "type": "object",
+      "properties": {
+        "id_barang": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "nama_barang": {
+          "type": "string"
+        },
+        "stok": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "id_jenis_barang": {
+          "type": "integer",
+          "format": "int32"
+        }
+      },
+      "required": [
+        "id_barang",
+        "nama_barang",
+        "stok",
+        "id_jenis_barang"
+      ]
+    },
+    "APIUpdateBarangRequest": {
+      "title": "APIUpdateBarangRequest",
+      "example": {
+        "nama_barang": "Kopi Baru",
+        "stok": 100,
+        "id_jenis_barang": 1
+      },
+      "type": "object",
+      "properties": {
+        "nama_barang": {
+          "type": "string"
+        },
+        "stok": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "id_jenis_barang": {
+          "type": "integer",
+          "format": "int32"
+        }
+      },
+      "required": [
+        "nama_barang",
+        "stok",
+        "id_jenis_barang"
+      ]
+    },
+    "APICreateJenisBarangRequest": {
+      "title": "APICreateJenisBarangRequest",
+      "example": {
+        "id_jenis_barang": 2,
+        "nama_jenis_barang": "Pembersih"
+      },
+      "type": "object",
+      "properties": {
+        "id_jenis_barang": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "nama_jenis_barang": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id_jenis_barang",
+        "nama_jenis_barang"
+      ]
+    },
+    "APIUpdateJenisBarangRequest": {
+      "title": "APIUpdateJenisBarangRequest",
+      "example": {
+        "nama_jenis_barang": "Konsumsi Baru"
+      },
+      "type": "object",
+      "properties": {
+        "nama_jenis_barang": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "nama_jenis_barang"
+      ]
+    },
+    "APICreatePenjualanRequest": {
+      "title": "APICreatePenjualanRequest",
+      "example": {
+        "id_penjualan": 1,
+        "id_barang": 1,
+        "qty_terjual": 100
+      },
+      "type": "object",
+      "properties": {
+        "id_penjualan": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "id_barang": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "qty_terjual": {
+          "type": "integer",
+          "format": "int32"
+        }
+      },
+      "required": [
+        "id_penjualan",
+        "id_barang",
+        "qty_terjual"
+      ]
+    },
+    "APIUpdatePenjualanRequest": {
+      "title": "APIUpdatePenjualanRequest",
+      "example": {
+        "id_barang": 1,
+        "qty_terjual": 10
+      },
+      "type": "object",
+      "properties": {
+        "id_barang": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "qty_terjual": {
+          "type": "integer",
+          "format": "int32"
+        }
+      },
+      "required": [
+        "id_barang",
+        "qty_terjual"
+      ]
+    }
+  },
+  "tags": [
+    {
+      "name": "Misc",
+      "description": ""
+    }
+  ]
+}
